@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img class="menuIcono" src="./img/logo.png" alt="">
+        <nav class="menuNavegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicio">Servicio</a>
+                <a href="#empresas">Empresas</a>
+                <a href="#presencia">Presencia</a>
+                <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor textoHeader">
+            <h1 class="titulo">EXTREMO SUR</h1>
+            <p class="pHeader">Llevamos tu producto a todos los puntos del sur</p>
+        </div>   
+    </header>
+    <main>
+        <section class="servicio contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro servicio</h2>
+            <div class="contenedorServicio">
+                <img class="imgServicio" src="./img/Team work_Isometric.svg" alt="">
+                <div class="textoServicio">
+                    <div class="servicio">
+                        <h3 class="tituloServicio">Representamos tu marca</h3>
+                        <p class="pServicio"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem enim illum dolorum nisi. Aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="empresas" id="empresas">
+            <div class="contenedor">
+                <h2 class="subtitulo">Empresas</h2>
+                <div class="contenedorEmpresas">
+                    <img src="./img/banderita.jpg" class="imgEmpresas" alt="Hola">
+                    <img src="img/finexcor.jpg" class="imgEmpresas" alt="">
+                    <img src="img/florestal.jpg" class="imgEmpresas" alt="">
+                    <img src="img/paladini.jpg" class="imgEmpresas" alt="">
+                    <img src="img/texas.jpg" class="imgEmpresas" alt="">
+                    <img src="img/ELEGANTE.png" class="imgEmpresas" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="contenedor" id="presencia">
+            <h2 class="subtitulo">Presencia</h2>
+            <p class="textoSubtituloPresencia">Tenemos posicionamiento de negocio en todo el cono sur.</p>
+            <div class="presencia">
+                <div class="contenedorPresencia">
+                    <div class="lugares">
+                        <ul class="listaLugares">
+                            <li>Puerto Madryn</li>
+                            <li>Comodoro Rivadavia</li>
+                            <li>Calenta Olivia</li>
+                            <li>Pico Truncado</li>
+                            <li>El Calafate</li>
+                            <li>Rio Gallegos</li>
+                            <li>Ushuaia</li>
+                        </ul>
+                    </div>
+                    <iframe class="mapa" src="https://www.google.com/maps/d/embed?mid=10ZX5nAXW--Oo5t8mzhGbYxEfhb2GlyOy" width="640" height="480"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor" id="contacto">            
+                <div class="contacto">
+                    <h2 class="subtitulo">Contacto</h2>
+                    <p class="pContacto">Ponganse en contacto con nosotros si desea nuestro servicio.</p>
+                </div>
+                <div class="contenedorFlex">
+                    <form class="form" action="correo.php" method="POST">
+                        <div class="formSection">
+                            <input type="text" class="formInput" name="nombre" placeholder="Nombre y apellido" required>
+                        </div>
+                        <div class="formSection">
+                            <input type="email" class="formInput" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="formSection">
+                            <input type="number" class="formInput" name="telefono" placeholder="Número de teléfono" required>
+                        </div>
+                        <div class="formSection">
+                            <input type="text" class="formInput" name="asunto" placeholder="Asunto" required>
+                        </div>
+                        <div class="formSection">
+                            <textarea class="formInput" name="mensaje" placeholder="Mensaje que desea enviar"></textarea required>
+                        </div>
+                        <div class="formSection">
+                            <button class="formButton" type="submit">Enviar</button>
+                            <button class="formButton" type="reset">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul class="footerList">
+                <li>EXTREMO SUR SRL</li>
+                <li>TELEFONO</li>
+                <li>CORREO ELECTRÓNICO</li>
+                <li>CIUDAD</li>
+                <li>DIRECCIÓN</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
